@@ -32,7 +32,7 @@ def locate_subdomains(domain, wordlist_file):
     print(f"Total active hosts identified: {len(live_hosts)}")
 
 if __name__ == "__main__":
-    target_host = "google.com" 
+    target_host = input("Enter the target domain to scan (e.g., google.com): ")
     list_path = "subdomains.txt"
     
     locate_subdomains(target_host, list_path)
